@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  
+  <style type="text/css">
+  .lineContainer {
+    position:absolute;
+  }
+  .line {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    width: 100px;
+    Height: 15px;
+    float: left;
+    margin: 1;
+    padding: 1;
+  }
+  .lineRightEnd {
+    border-right: 0;
+  }
+  .textContainer {
+    position: relative;
+    top: 15px;
+    margin: 1;
+    padding: 1;
+  }
+  .text {
+    width: 100px;
+    float: left;
+    margin: 1;
+    padding: 1;
+    text-align: center;
+  }
+
+  .textLeftEnd {
+    width: 55px;
+    Height: 10px;
+    float: left;
+    margin: 1;
+    padding: 1;
+  }
+  </style>
+
+</head>
+<body>
+
+<div class="lineContainer">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  
+  <div class="line lineRightEnd"></div>
+  <div class="textContainer">
+    <div class="textLeftEnd"></div>
+    <div class="text">Strongly <br> Disagree</div>
+    <div class="text">Disagree</div>
+    <div class="text">Neither Agree <br>nor<br>Disagree</div>
+    <div class="text">Agree</div>
+    <div class="text">Strongly<br>Agree</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="jspsych/jspsych.js"></script>
+    <script src="jspsych-moving-window.js"></script>
+    <link rel="stylesheet" href="jspsych/css/jspsych.css">
+    
+  </head>
+  <body></body>
+  <script>
+  
+    var timeline = [];
+
+    var trial = {
+      type: 'visual-analog-scale',
+      stimulus: 'The dog chased the car',
+      labels: ["(1) <br> Yes", "(2) <br> No", "(3) <br> Maybe", "(4) <br> Could", "(5) <br> Possibly"],
+      choices: ['1', '2', '3', '4', '5']
+    }
+    timeline.push(trial);
+
+    jsPsych.init({
+      timeline: timeline,
+      on_finish: function(){
+        jsPsych.data.displayData()
+      }
+    })
+  </script>
+</html>
